@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,36 +31,68 @@ const Navbar = () => {
 
   return (
     <header id="header">
-      <a href="#home" className="logo">Nandani</a>
+      <a href="#home" className="logo">
+        <div className="LogoBox">
+          <img src="images/blogo.png" />
+        </div>
+      </a>
       <nav className="navbar">
         <ul>
-          <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
-          <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a></li>
-          <li><a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a></li>
-          <li><a href="#services" className={activeSection === 'services' ? 'active' : ''}>Service</a></li>
-          <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a></li>
-          <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
+          <li>
+            <a
+              href="#home"
+              className={activeSection === "home" ? "active" : ""}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              className={activeSection === "about" ? "active" : ""}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              className={activeSection === "skills" ? "active" : ""}
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              className={activeSection === "services" ? "active" : ""}
+            >
+              Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className={activeSection === "projects" ? "active" : ""}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className={activeSection === "contact" ? "active" : ""}
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React from 'react'
 // import { NavLink } from 'react-router-dom'

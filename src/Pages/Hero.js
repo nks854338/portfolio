@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="HeroRight">
             <div>
               <div class="HeroSectionImage">
-                <img src="images\woman_laptop.png" />
+                <img src="images\coder3.png" />
               </div>
             </div>
           </div>

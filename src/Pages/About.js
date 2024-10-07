@@ -8,7 +8,7 @@ const About = () => {
           <div className="HeroRight">
             <div>
               <div className="HeroSectionImage">
-                <img src="images/woman_laptop.png" />
+                <img src="images/coder2.png" />
               </div>
             </div>
           </div>
@@ -27,7 +27,8 @@ const About = () => {
                   <div className="aboutInfoBox">
                     <div className="aboutInfoLeftBox">
                       <div className="AboutInfoImg">
-                        <img src="images/experience1.png" alt="" />
+                        {/* <img src="images/experience1.png" alt="" /> */}
+                        <i class="fa-solid fa-award"></i>
                       </div>
                     </div>
                     <div className="aboutInfoRightBox">
@@ -38,12 +39,13 @@ const About = () => {
                   <div className="aboutInfoBox">
                     <div className="aboutInfoLeftBox">
                       <div className="AboutInfoImg">
-                        <img src="images/247.png" alt="" />
+                        {/* <img src="images/247.png" alt="" /> */}
+                        <i class="fa-solid fa-user-graduate"></i>
                       </div>
                     </div>
                     <div className="aboutInfoRightBox">
-                      <h3>24/7</h3>
-                      <p>Customer Support</p>
+                      <h3>BSC CS</h3>
+                      <p>Education</p>
                     </div>
                   </div>
                 </div>
@@ -52,7 +54,8 @@ const About = () => {
                   <div className="aboutInfoBox">
                     <div className="aboutInfoLeftBox">
                       <div className="AboutInfoImg">
-                        <img src="images/project1.png" alt="" />
+                        {/* <img src="images/project1.png" alt="" /> */}
+                        <i class="fa-solid fa-ranking-star"></i>
                       </div>
                     </div>
                     <div className="aboutInfoRightBox">

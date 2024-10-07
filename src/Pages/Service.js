@@ -12,9 +12,7 @@ const Service = () => {
               </h3>
             </div>
             <div className="servicesParagraph HeroParagraph">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-              voluptas omnis nesciunt a reiciendis maiores aspernatur non
-              laborum odit earum.
+            Creating dynamic full-stack web applications, intuitive UI/UX designs, and responsive WordPress sites for seamless digital experiences.
             </div>
           </div>
           <div className="serviceLowerContainer">
@@ -25,9 +23,7 @@ const Service = () => {
                 </div>
                 <div className="serviceCardMid">Web Development</div>
                 <div className="serviceCardBottom">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, voluptatem? Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Minima, eum!
+                Crafting responsive and dynamic websites with sleek designs, optimized performance, and seamless user experience tailored to your needs.
                 </div>
               </div>
               <div className="serviceCard">
@@ -36,9 +32,7 @@ const Service = () => {
                 </div>
                 <div className="serviceCardMid">Wordpress Development</div>
                 <div className="serviceCardBottom">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, voluptatem? Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Minima, eum!
+                Professional WordPress development service creating custom, responsive, and SEO-friendly websites tailored to your business needs.
                 </div>
               </div>
               <div className="serviceCard">
@@ -47,9 +41,7 @@ const Service = () => {
                 </div>
                 <div className="serviceCardMid">UI /UX Design</div>
                 <div className="serviceCardBottom">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, voluptatem? Lorem ipsum dolor, sit amet
-                  consectetur adipisicing elit. Minima, eum!
+                Crafting intuitive and engaging user interfaces with seamless user experiences that enhance usability and visual appeal.
                 </div>
               </div>
             </div>

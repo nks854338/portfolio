@@ -14,7 +14,7 @@ const Contact = () => {
             <div className="ContactRight">
               <div>
                 <div className="HeroSectionImage">
-                  <img src="images/woman_laptop.png" />
+                  <img src="images/coder1.png" />
                 </div>
               </div>
             </div>

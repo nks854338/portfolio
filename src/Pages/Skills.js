@@ -60,17 +60,9 @@ const Tool = [
     Title: "Wordpress",
     img: "images//SkillLogo/wordpress.jpg",
   },
-  {
-    Title: "Bootstrap",
-    img: "images//SkillLogo/bootstrap.png",
-  },
 ];
 
 const Framwork = [
-  {
-    Title: "Bootstrap",
-    img: "images//SkillLogo/bootstrap.png",
-  },
   {
     Title: "React",
     img: "images//SkillLogo/React.png",
@@ -80,10 +72,6 @@ const Framwork = [
     img: "images//SkillLogo/Redux.png",
   },
   {
-    Title: "Twilwind",
-    img: "images//SkillLogo/tawilwind.png",
-  },
-  {
     Title: "Express js",
     img: "images//SkillLogo/Express.png",
   },
@@ -91,10 +79,17 @@ const Framwork = [
     Title: "node js",
     img: "images//SkillLogo/node.png",
   },
+  {
+    Title: "Tailwind",
+    img: "images//SkillLogo/tawilwind.png",
+  },
+  {
+    Title: "Bootstrap",
+    img: "images//SkillLogo/bootstrap.png",
+  },
 ];
 
 const Skills = () => {
-
   const [MyLanguage] = useState(Language);
   const [MyTool] = useState(Tool);
   const [MyFramwork] = useState(Framwork);
@@ -108,49 +103,51 @@ const Skills = () => {
               My<span>Skills</span>
             </h3>
           </div>
-          <div className="skillsContainer">
-            <div className="skillHeading">Language</div>
-            <div className="skillsBoxes">
-              {MyLanguage.map((Data) => {
-                return (
-                  <div className="skillsBox">
-                    <div className="skillImage">
-                      <img src={Data.img} alt="" />
+          <div className="skillcardContainer">
+            <div className="skillsContainer">
+              <div className="skillHeading">Language</div>
+              <div className="skillsBoxes">
+                {MyLanguage.map((Data) => {
+                  return (
+                    <div className="skillsBox">
+                      <div className="skillImage">
+                        <img src={Data.img} alt="" />
+                      </div>
+                      <div className="skillName">{Data.Title}</div>
                     </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-          <div className="skillsContainer">
-            <div className="skillHeading">Tool</div>
-            <div className="skillsBoxes">
-            {MyTool.map((Data) => {
-                return (
-                  <div className="skillsBox">
-                    <div className="skillImage">
-                      <img src={Data.img} alt="" />
+            <div className="skillsContainer">
+              <div className="skillHeading">Tool</div>
+              <div className="skillsBoxes">
+                {MyTool.map((Data) => {
+                  return (
+                    <div className="skillsBox">
+                      <div className="skillImage">
+                        <img src={Data.img} alt="" />
+                      </div>
+                      <div className="skillName">{Data.Title}</div>
                     </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-          <div className="skillsContainer">
-            <div className="skillHeading">Framwork & Libries</div>
-            <div className="skillsBoxes">
-            {MyFramwork.map((Data) => {
-                return (
-                  <div className="skillsBox">
-                    <div className="skillImage">
-                      <img src={Data.img} alt="" />
+            <div className="skillsContainer">
+              <div className="skillHeading">Framwork & Libries</div>
+              <div className="skillsBoxes">
+                {MyFramwork.map((Data) => {
+                  return (
+                    <div className="skillsBox">
+                      <div className="skillImage">
+                        <img src={Data.img} alt="" />
+                      </div>
+                      <div className="skillName">{Data.Title}</div>
                     </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
