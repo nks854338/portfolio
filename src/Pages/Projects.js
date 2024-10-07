@@ -171,12 +171,15 @@ const Projects = () => {
                         </div>
                       </div>
                       <div className="projectCardBottom">
+                      <a href={Data.view}>
                         <button className="projectLeftBtn ">
-                          <a href={Data.view}>View</a>
+                          View
                         </button>
-                        <button className="projectRightBtn">
-                          <a href={Data.repo}>Github Repo</a>
+                        </a>
+                        <a href={Data.repo}><button className="projectRightBtn">
+                          Github Repo
                         </button>
+                        </a>
                       </div>
                     </div>
                   );

@@ -39,6 +39,9 @@
     padding-left: 20px;
   }
   
+  button{
+    cursor: pointer;
+  }
   
   
   /* Header & Navigation section */
@@ -70,7 +73,6 @@
   
   header .navbar ul li a {
     font-size: 17px;
-    color: #fff;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -187,7 +189,6 @@
     border: solid #fff 1px;
     font-size: 18px;
     background-color: #000813;
-    cursor: pointer;
   }
 
   .HeroSectionImage{
@@ -226,27 +227,30 @@
     display: flex;
     align-items: center;
     gap: 15px;
-  }
-
-  .aboutInfoLeftBox{
     height: 8vmin;
   }
 
+  .aboutInfoLeftBox{
+    /* height: 8vmin; */
+    height: 100%;
+  }
+
   .AboutInfoImg{
-    height: 90%;
-    padding: 2px;
+    height: 100%;
+    display: flex;
+    align-items:end;
     width: fit-content;
   }
 
   .AboutInfoImg i{
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .aboutInfoRightBox{
     display: flex;
     flex-direction: column;
     gap: 2px;
-    height: 8vmin;
+    /* height: 8vmin; */
   }
 
   .aboutInfoRightBox h3{
@@ -536,7 +540,6 @@ font-size: 30px;
 
 .projectLeftBtn{
   background-color: #118ab2;
-  color: #000813;
 }
 
 .projectRightBtn{

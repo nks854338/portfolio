@@ -14,13 +14,13 @@ const About = () => {
           </div>
           <div className="HeroLeft">
             <div className="HeroLeftContentContainer">
-              <div className="HeroHeading">About Us</div>
+            <div className="ServiceMainHeading">
+              <h3>
+                About <span>Us</span>
+              </h3>
+            </div>
               <div className="HeroParagraph">
-                Welcome to my coding journey! 🚀 Excited to share my passion for
-                tech and showcase my projects. Explore and join me on this
-                adventure! Welcome to my coding journey! 🚀 Excited to share my
-                passion for tech and showcase my projects. Explore and join me
-                on this adventure!
+              I'm Nandani Singh, a passionate web developer with expertise in frontend and backend technologies like React.js, Node.js, and MongoDB. As a freelancer, I enjoy crafting intuitive user interfaces and seamless user experiences. With a focus on innovation, I create robust, user-centered applications that solve real-world problems. I also have experience with WordPress, continually seeking opportunities to expand my skill set in technology.
               </div>
               <div className="aboutInfoContainer">
                 <div className="aboutInfoBoxes">
@@ -59,7 +59,7 @@ const About = () => {
                       </div>
                     </div>
                     <div className="aboutInfoRightBox">
-                      <h3>5+</h3>
+                      <h3>15+</h3>
                       <p>Projects</p>
                     </div>
                   </div>

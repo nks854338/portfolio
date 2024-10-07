@@ -100,7 +100,7 @@ const Skills = () => {
         <div>
           <div className="skillsMainHeading">
             <h3>
-              My<span>Skills</span>
+              My <span>Skills</span>
             </h3>
           </div>
           <div className="skillcardContainer">
