@@ -1,482 +1,583 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    color: #fff;
-    font-family: "Poppins";
-    border: none;
-  }
-
-  html {
-    scroll-behavior:smooth;
-  }  
-  
-  body {
-    background-color: #000813;
-  }
-
-  body::-webkit-scrollbar{
-    display: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-
-  hr{
-    border: solid 0.2px #118ab2;
-    margin-top: 90px;
-    margin-bottom: 50px;
-    /* margin-bottom: 150px;
-    margin-top: 150px; */
-  }
-
-  input, textarea{
-    border: none;
-    outline: none;
-    color: #000813;
-    font-weight: 600;
-    padding-left: 20px;
-  }
-  
-  button{
-    cursor: pointer;
-  }
-  
-  
-  /* Header & Navigation section */
-  
-  header {
-    position: fixed;
-    top: 0; 
-    background-color: #000813cb; 
-    backdrop-filter: blur(10px); 
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 80px;
-    z-index: 1000; 
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins";
+  border: none;
 }
-  header .logo {
-    font-weight: 800;
-    font-size: 30px;
-    color: #118ab2;
-  }
-  
-  header .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-  }
-  
-  header .navbar ul li a {
-    font-size: 17px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-/* 
-  .navbar ul li a:active {
-    text-decoration: underline #118ab2;
-    color: #118ab2;
-    border-radius: 10px;
-  } */
 
-  .navbar a.active {
-    border-radius: 0;
-    /* text-decoration: underline #118ab2; */
-    border-bottom: solid #118ab2 1px;
-    color: #118ab2;
-    padding: 5px;
-  } 
-  
-  header label {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000813;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: solid 0.2px #118ab2;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  /* margin-bottom: 150px;
+    margin-top: 150px; */
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  color: #000813;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.phoneHide {
+  display: block;
+}
+
+.laptopHide {
+  display: none;
+}
+
+/* Header & Navigation section */
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: #000813cb;
+  backdrop-filter: blur(10px);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  z-index: 1000;
+}
+
+.LogoBox {
+  margin: 30px 0px 0 20px;
+}
+
+.LogoBox img {
+  height: "60px";
+  width: "auto";
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header .navbar ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a.active {
+  border-radius: 0;
+  border-bottom: solid #118ab2 1px;
+  color: #118ab2;
+  padding: 5px;
+}
+
+header label {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.closeIcon, .menuIcon {
+  display: none;
+}
+
+@media (min-width: 150px) and (max-width: 900px) {
+  header {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
+
+  .LogoBox {
+    margin: 20px 0px 0 10px;
+  }
+
+  .navbar {
+    background-color: #000813;
+    width: 70%;
+    padding-top: 300px;
+    color: #fff;
     display: none;
   }
-  
-  .img {
-    border-radius: 50%;
+
+  .showNavbar {
+    display: block;
+    transform: translateY(0);
   }
   
-  
-  
-  /* Hero section css start */
-  
-  .HeroSection, .aboutSection{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 150px;
-    padding-bottom: 50px;
+  .hideNavbar {
+    display: none;
+    transform: translateY(-100%);
   }
 
-  .LogoBox{
-     margin: 30px 0px 0 20px;
+  .menuIcon{
+    width: 10%;
+    font-size: 30px;
   }
 
-  .LogoBox img{
-    height: "60px";
-    width: "auto"; 
-  }
-  
-  .HeroLeft, .HeroRight{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .closeIcon, .menuIcon{
+    display: block;
   }
 
-  .HeroLeft{
-    width: 60vw;
+  .closeIcon i {
+    font-size: 35px;
   }
 
-  .HeroRight{
-    width: 50vw;
-    max-height: 90vh;
-  }
-
-  .HeroLeftContentContainer{
+  header .navbar ul {
+    padding-top: 50px;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    width: 40vw;
-  }
-  
-  .HeroHeading{
-    font-size: 40px;
-  }
-
-  .proffession{
-    color: #118ab2;
-  }
-  
-  .HeroParagraph{
-    font-size: 18px;
-    font-weight: 300;
-  }
-  
-  .socialmediaIcons{
-    display: flex;
-    gap: 15px;
-  }
-  
-  .socialMediaIcon{
-    padding: 12px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 25px;
-    border-radius: 50px;
-    border: #fff 1px solid;
-  }
-
-  .socialMediaIcon:hover{
-    padding: 12px;
-    border: #118ab2 1px solid;
-    box-shadow: 0 0 15px #118ab2;
-    transform: scale(1.05);
-  }
-
-  .HeroBtn button{
-    height: 55px;
-    width: 180px;
-    border-radius: 15px;
-    border: solid #fff 1px;
-    font-size: 18px;
-    background-color: #000813;
-  }
-
-  .HeroSectionImage{
-    overflow: hidden;
-    height: 30vw;
-  }
-
-  img{
-    height: 100%;
+    gap: 40px;
     width: 100%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
   }
 
-  
-  /* Hero section css end */
+  li a {
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
 
+/* Hero section css start */
 
+.HeroSection,
+.aboutSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
 
-  /* About section css start */
+.HeroLeft,
+.HeroRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeroLeft {
+  width: 60vw;
+}
+
+.HeroRight {
+  width: 50vw;
+  max-height: 90vh;
+}
+
+.HeroLeftContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 40vw;
+}
+
+.HeroHeading {
+  font-size: 40px;
+}
+
+.proffession {
+  color: #118ab2;
+}
+
+.HeroParagraph {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.socialmediaIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialMediaIcon {
+  padding: 12px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 50px;
+  border: #fff 1px solid;
+}
+
+.socialMediaIcon:hover {
+  padding: 12px;
+  border: #118ab2 1px solid;
+  box-shadow: 0 0 15px #118ab2;
+  transform: scale(1.05);
+}
+
+.HeroBtn button {
+  height: 55px;
+  width: 180px;
+  border-radius: 15px;
+  border: solid #fff 1px;
+  font-size: 18px;
+  background-color: #000813;
+}
+
+.HeroSectionImage {
+  overflow: hidden;
+  height: 30vw;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 150px) and (max-width: 700px) {
+  .HeroSection,
+  .contactContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
 
   .aboutSection{
-    /* padding-top: 10px; */
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 
-  .aboutInfoContainer{
-    display: flex;
+  .HeroLeft {
+    width: 100%;
+    padding: 0 30px;
   }
 
-  .aboutInfoBoxes{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  .HeroLeftContentContainer {
+    width: 100%;
   }
 
-  .aboutInfoBox{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    height: 8vmin;
+  .HeroRight {
+    width: 100%;
   }
 
-  .aboutInfoLeftBox{
-    /* height: 8vmin; */
-    height: 100%;
+  .HeroSectionImage {
+    width: 60vw;
+    height: auto;
   }
 
-  .AboutInfoImg{
-    height: 100%;
-    display: flex;
-    align-items:end;
-    width: fit-content;
+  .AboutInfoImg i {
+    font-size: 35px;
   }
+}
 
-  .AboutInfoImg i{
-    font-size: 50px;
-  }
+/* Hero section css end */
 
-  .aboutInfoRightBox{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    /* height: 8vmin; */
-  }
+/* About section css start */
 
-  .aboutInfoRightBox h3{
-    font-size: 28px;
-    color: #118ab2;
-  }
+.aboutSection {
+  /* padding-top: 10px; */
+}
 
-  .aboutInfoRightBox p{
-    font-size: 17px;
-  }
- 
-  .AboutInfoImg{
-    height: 100%;
-    width: fit-content;
-  }
+.aboutInfoContainer {
+  display: flex;
+}
 
+.aboutInfoBoxes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.aboutInfoBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 8vmin;
+}
 
+.aboutInfoLeftBox {
+  /* height: 8vmin; */
+  height: 100%;
+}
 
-  /* About section css end */
+.AboutInfoImg {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  width: fit-content;
+}
 
+.AboutInfoImg i {
+  font-size: 50px;
+}
 
-  /* skill section css start */
+.aboutInfoRightBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* height: 8vmin; */
+}
 
-.SkillSection{
-    padding-top: 100px;
-    /* padding-top: 20vmin; */
-    padding-bottom: 20px;
-    /* display: flex;
+.aboutInfoRightBox h3 {
+  font-size: 28px;
+  color: #118ab2;
+}
+
+.aboutInfoRightBox p {
+  font-size: 17px;
+}
+
+.AboutInfoImg {
+  height: 100%;
+  width: fit-content;
+}
+
+/* About section css end */
+
+/* skill section css start */
+
+.SkillSection {
+  padding-top: 100px;
+  /* padding-top: 20vmin; */
+  padding-bottom: 20px;
+  /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
-.skillcardContainer{
+.skillcardContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.skillsMainHeading h3{
-    font-size: 45px;
+.skillsMainHeading h3 {
+  font-size: 45px;
 }
 
-.skillsMainHeading h3 span{
-    font-size: 40px;
-    color: #118ab2;
+.skillsMainHeading h3 span {
+  font-size: 40px;
+  color: #118ab2;
 }
 
-.skillsMainHeading{
+.skillsMainHeading {
   margin-bottom: 50px;
 }
 
-.skillsMainHeading, .skillHeading{
-    text-align: center;
+.skillsMainHeading,
+.skillHeading {
+  text-align: center;
 }
 
-.skillHeading{
-    font-size: 25px;
+.skillHeading {
+  font-size: 25px;
 }
 
-.skillsBoxes{
-    display: flex;
-    align-items: center;
-    gap: 5vmin;
-    justify-content: center;
-    margin: 30px;
-    overflow: scroll;
+.skillsBoxes {
+  display: flex;
+  align-items: center;
+  gap: 5vmin;
+  justify-content: center;
+  margin: 30px;
+  overflow: scroll;
 }
 
-.skillsBoxes::-webkit-scrollbar{
+.skillsBoxes::-webkit-scrollbar {
   display: none;
 }
 
-.skillsBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.skillsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.skillName{
-    font-size: 18px;
-    font-weight: 300;
+.skillName {
+  font-size: 18px;
+  font-weight: 300;
 }
 
-.skillImage{
-    border-radius: 50%;
-    height: 70px; 
-    width: 70px;
+.skillImage {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
 }
 
-.skillImage:hover{
+.skillImage:hover {
   transform: scale(1.05);
 }
 
-.skillImage img{
-    border-radius: 50%;
+.skillImage img {
+  border-radius: 50%;
 }
-  /* skill section css end */
+/* skill section css end */
 
+/* service section css start */
 
-  /* service section css start */  
-
-.ServicesSection{
+.ServicesSection {
   padding: 0 10vmin;
-  padding-top: 150px;  
-  padding-bottom: 100px;  
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
-.ServiceMainHeading h3{
-    font-size: 45px;
+.ServiceMainHeading h3 {
+  font-size: 45px;
 }
 
-.ServiceMainHeading h3 span{
-    font-size: 40px;
-    color: #118ab2;
+.ServiceMainHeading h3 span {
+  font-size: 40px;
+  color: #118ab2;
 }
 
-.serviceUpperContainer div{
-    text-align: left;
+.serviceUpperContainer div {
+  text-align: left;
 }
 
-.servicesParagraph{
-    width: 40%;
+.servicesParagraph {
+  width: 40%;
 }
 
-.serviceCards{
-    margin-top: 50px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.serviceCards {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-  .serviceCard {
-    background-color: transparent;
-    border-radius: 20px;
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-    padding: 15px;
-    text-align: center;
-    background-color: transparent;
-    border: solid 0.02px #118ab2;
+.serviceCard {
+  background-color: transparent;
+  border-radius: 20px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 15px;
+  text-align: center;
+  background-color: transparent;
+  border: solid 0.02px #118ab2;
 }
 
 .serviceCard:hover {
-    background-color: transparent;
-    box-shadow: 0 0 10px #118ab2;
-    transform: scale(1.02);
+  background-color: transparent;
+  box-shadow: 0 0 10px #118ab2;
+  transform: scale(1.02);
 }
 
 .serviceCardtop i {
-    background-color: transparent;
-    font-size: 50px;
+  background-color: transparent;
+  font-size: 50px;
 }
 
-.serviceCardMid{
-    font-weight: 700;
-    font-size: 30px;
+.serviceCardMid {
+  font-weight: 700;
+  font-size: 30px;
 }
 
-.serviceCardBottom{
-    font-size: 15px;
+.serviceCardBottom {
+  font-size: 15px;
 }
 
-  /* service section css end */
-
-
-
-  /* Project section css end */
-
-  .ProjectSection{
-    padding-top: 100px;
+@media (min-width: 150px) and (max-width: 700px) {
+  .ServicesSection {
+    padding: 30px;
+  }
+  .servicesParagraph{
+    width: 100%;
+    padding-bottom: 30px;
   }
 
-.ProjectMainHeading{
-  padding-bottom: 60px;
-  text-align: center;
-font-size: 30px;
+  .serviceCard{
+    padding: 25px;
+  }
 }
 
-.serviceLowerContainer{
+/* service section css end */
+
+/* Project section css end */
+
+.ProjectSection {
+  padding-top: 100px;
+}
+
+.ProjectMainHeading {
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.serviceLowerContainer {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
-.ProjectSlideIconBox{
+.ProjectSlideIconBox {
   height: 100px;
 }
 
-.ProjectSlideIcon{
+.ProjectSlideIcon {
   display: flex;
   gap: 20px;
   float: left;
 }
 
-.ProjectSlideIcon span{
- height: 40px;
- width: 40px;
- padding: 15px;
- border-radius: 50%;
- display: flex;
- justify-content: center;
- align-items: center;
+.ProjectSlideIcon span {
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* border: solid #118ab2 0.2px; */
   font-size: 35px;
   margin: 50px;
   cursor: pointer;
 }
 
-.projectCards{
-  display: grid;
+.projectCards {
+  display: flex;
   gap: 5vmin;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
 }
 
-.projectCard{
+.projectCard {
   height: 420px;
   width: 380px;
   display: flex;
@@ -487,50 +588,50 @@ font-size: 30px;
   border: solid #118ab2 0.2px;
 }
 
-.projectCardtop{
+.projectCardtop {
   min-height: 50%;
   width: 100%;
   border-radius: 20px;
   /* border: solid #118ab2 2px; */
 }
 
-.ProjectImage{
+.ProjectImage {
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.ProjectImage img{
+.ProjectImage img {
   border-radius: 20px;
 }
 
-.projectCardMid{
+.projectCardMid {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.ProjectHeading{
+.ProjectHeading {
   font-size: 22px;
   color: #118ab2;
 }
 
-.ProjectParagraph{
+.ProjectParagraph {
   font-size: 13px;
   font-weight: 300;
   display: -webkit-box;
-  -webkit-line-clamp: 4;  
-  -webkit-box-orient: vertical;  
-  overflow: hidden;  
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.projectCardBottom{
+.projectCardBottom {
   display: flex;
   justify-content: space-between;
 }
 
-.projectCardBottom button{
+.projectCardBottom button {
   height: 40px;
   width: 150px;
   border-radius: 10px;
@@ -538,61 +639,93 @@ font-size: 30px;
   border: solid #118ab2 0.2px;
 }
 
-.projectLeftBtn{
+.projectLeftBtn {
   background-color: #118ab2;
 }
 
-.projectRightBtn{
+.projectRightBtn {
   background-color: transparent;
 }
 
-@media(max-width:650px){
-  
+.seeMore{
+  /* height: 30px; */
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  background-color: #118ab2;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+@media (min-width: 150px) and (max-width: 700px) {
+  .phoneHide {
+    display: none;
+  }
+
+  .laptopHide {
+    display: block;
+  }
+
+  .projectCards,
+  .serviceCards {
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .projectCards {
+    padding: 0px 30px;
+  }
+
+  .projectCard, .serviceCard {
+    width: 100%;
+  }
 }
 
 /* Contact us section css start */
 
-.contactSection{
+.contactSection {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.contactContainer{
+.contactContainer {
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.contactMainHeading{
-  margin-bottom:-5px ;
+.contactMainHeading {
+  margin-bottom: -5px;
 }
 
-.ContactLeftContentContainer{
+.ContactLeftContentContainer {
   width: 40vw;
 }
 
-.ContactForm{
+.ContactForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.NameMailBox{
+.NameMailBox {
   display: flex;
   gap: 10px;
   justify-content: space-between;
 }
 
-.UserInfo{
+.UserInfo {
   width: 50%;
 }
 
-.UserInfo input{
+.UserInfo input {
   width: 100%;
 }
 
-input{
+input {
   height: 40px;
   background-color: transparent;
   border: solid 1px #118ab2;
@@ -600,13 +733,13 @@ input{
   color: #fff;
 }
 
-.ContactInputBox{
+.ContactInputBox {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.message textarea{
+.message textarea {
   width: 100%;
   height: 200px;
   background-color: transparent;
@@ -616,7 +749,7 @@ input{
   padding: 10px 15px;
 }
 
-.ContactSubmit button{
+.ContactSubmit button {
   width: 100%;
   height: 40px;
   color: #fff;
@@ -624,17 +757,53 @@ input{
   background-color: #118ab2;
 }
 
+@media (min-width: 150px) and (max-width: 700px){
+  .contactContainer{
+    height: auto;
+  }
+
+  .ContactRight, .ContactLeft{
+    width: 100%;
+    margin: auto;
+  }
+
+  .HeroSectionImage, .ContactLeftContentContainer{
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HeroSectionImage img{
+    width: 70vw;
+  }
+
+  .ContactForm{
+    width: 90vw;
+  }
+
+  .NameMailBox {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .UserInfo {
+    width: 100%;
+  }
+}
+
 /* Footer section */
 
 footer {
-    padding: 3% 20%;
-    color: white;
-    text-align: center;
-    border: solid 0.5px #011531;
+  padding: 3% 20%;
+  color: white;
+  text-align: center;
+  border: solid 0.5px #011531;
 }
 
 footer h3 {
-    font-size: 17px;
-    font-weight: lighter;
-} 
-
+  font-size: 17px;
+  font-weight: lighter;
+}

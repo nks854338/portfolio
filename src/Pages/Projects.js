@@ -113,8 +113,7 @@ const Project = [
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const visibleProjects = 3;
+  const [visibleProjects, setVisibleProjects] = useState(3);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -132,6 +131,12 @@ const Projects = () => {
     );
   };
 
+  const handleMore = () => {
+    if (visibleProjects < Project.length) {
+      setVisibleProjects(visibleProjects + 1);
+    }
+  };
+
   return (
     <>
       <section className="ProjectSection" id="projects">
@@ -142,15 +147,12 @@ const Projects = () => {
             </h3>
           </div>
           <div className="serviceLowerContainer">
-            <div className="ProjectSlideIcon" onClick={handlePrev}>
+            <div className="ProjectSlideIcon phoneHide" onClick={handlePrev}>
               <span>
                 <i className="fa-solid fa-chevron-left"></i>
               </span>
             </div>
-            <div
-              className="projectCards"
-              style={{ display: "flex", overflow: "hidden" }}
-            >
+            <div className="projectCards">
               {Project.slice(currentIndex, currentIndex + visibleProjects).map(
                 (Data) => {
                   return (
@@ -161,7 +163,7 @@ const Projects = () => {
                     >
                       <div className="projectCardtop">
                         <div className="ProjectImage">
-                          <img src={Data.img} height="60px"/>
+                          <img src={Data.img} height="60px" />
                         </div>
                       </div>
                       <div className="projectCardMid">
@@ -171,14 +173,11 @@ const Projects = () => {
                         </div>
                       </div>
                       <div className="projectCardBottom">
-                      <a href={Data.view}>
-                        <button className="projectLeftBtn ">
-                          View
-                        </button>
+                        <a href={Data.view}>
+                          <button className="projectLeftBtn ">View</button>
                         </a>
-                        <a href={Data.repo}><button className="projectRightBtn">
-                          Github Repo
-                        </button>
+                        <a href={Data.repo}>
+                          <button className="projectRightBtn">Github Repo</button>
                         </a>
                       </div>
                     </div>
@@ -186,12 +185,17 @@ const Projects = () => {
                 }
               )}
             </div>
-            <div className="ProjectSlideIcon" onClick={handleNext}>
+            <div className="ProjectSlideIcon phoneHide" onClick={handleNext}>
               <span>
                 <i className="fa-solid fa-chevron-right"></i>
               </span>
             </div>
           </div>
+          {visibleProjects < Project.length && (
+            <div className="seeMore laptopHide" onClick={handleMore}>
+              See More
+            </div>
+          )}
         </div>
       </section>
     </>
