@@ -13,9 +13,7 @@ const Hero = () => {
                 <span className="proffession"> Web Developer</span>
               </div>
               <div className="HeroParagraph">
-                Welcome to my coding journey! 🚀 Excited to share my passion for
-                tech and showcase my projects. Explore and join me on this
-                adventure!
+              Welcome to my coding journey! 🚀 I'm excited to share my passion for tech and showcase my projects. Explore and join me on this adventure as I learn, create, and innovate in the world of technology!
               </div>
               <div className="socialmediaIcons">
                 <div className="socialMediaIcon">

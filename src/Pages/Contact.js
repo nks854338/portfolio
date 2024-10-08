@@ -5,11 +5,11 @@ const Contact = () => {
     <>
       <section id="contact" className="contactSection">
         <div className="contactMainContainer">
-          <div className="skillsMainHeading contactMainHeading">
-            <h3>
-              Contact <span>Us</span>
-            </h3>
-          </div>
+          <div className="mainSectionHeading textCenter">
+              <h3>
+                Contact <span>Me</span>
+              </h3>
+            </div>
           <div className="contactContainer">
             <div className="ContactRight">
               <div>

@@ -6,7 +6,7 @@ const Service = () => {
       <section id="services">
         <div className="ServicesSection">
           <div className="serviceUpperContainer">
-            <div className="ServiceMainHeading">
+          <div className="mainSectionHeading textCenter">
               <h3>
                 My <span>Services</span>
               </h3>

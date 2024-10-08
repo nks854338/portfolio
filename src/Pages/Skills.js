@@ -98,11 +98,11 @@ const Skills = () => {
     <>
       <section className="SkillSection" id="skills">
         <div>
-          <div className="skillsMainHeading">
-            <h3>
-              My <span>Skills</span>
-            </h3>
-          </div>
+           <div className="mainSectionHeading textCenter" style={{marginBottom: '30px',}}>
+              <h3>
+                My <span>Skills</span>
+              </h3>
+            </div>
           <div className="skillcardContainer">
             <div className="skillsContainer">
               <div className="skillHeading">Language</div>

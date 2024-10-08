@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
@@ -13,14 +13,21 @@ const About = () => {
             </div>
           </div>
           <div className="HeroLeft">
-            <div className="HeroLeftContentContainer">
-            <div className="ServiceMainHeading">
-              <h3>
-                About <span>Us</span>
-              </h3>
-            </div>
+            <div className="aboutLeftContentContainer">
+              <div className="mainSectionHeading">
+                <h3>
+                  About <span>Us</span>
+                </h3>
+              </div>
               <div className="HeroParagraph">
-              I'm Nandani Singh, a passionate web developer with expertise in frontend and backend technologies like React.js, Node.js, and MongoDB. As a freelancer, I enjoy crafting intuitive user interfaces and seamless user experiences. With a focus on innovation, I create robust, user-centered applications that solve real-world problems. I also have experience with WordPress, continually seeking opportunities to expand my skill set in technology.
+                I'm Nandani Singh, a passionate web developer with expertise in
+                frontend and backend technologies like React.js, Node.js, and
+                MongoDB. As a freelancer, I enjoy crafting intuitive user
+                interfaces and seamless user experiences. With a focus on
+                innovation, I create robust, user-centered applications that
+                solve real-world problems. I also have experience with
+                WordPress, continually seeking opportunities to expand my skill
+                set in technology.
               </div>
               <div className="aboutInfoContainer">
                 <div className="aboutInfoBoxes">
@@ -63,7 +70,7 @@ const About = () => {
                       <p>Projects</p>
                     </div>
                   </div>
-                  <div className="aboutInfoBox"></div>
+                  {/* <div className="aboutInfoBox"></div> */}
                 </div>
               </div>
             </div>
@@ -71,7 +78,7 @@ const About = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

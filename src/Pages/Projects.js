@@ -141,11 +141,11 @@ const Projects = () => {
     <>
       <section className="ProjectSection" id="projects">
         <div className="">
-          <div className="ProjectMainHeading">
-            <h3>
-              <span>Projects</span>
-            </h3>
-          </div>
+          <div className="mainSectionHeading textCenter" style={{marginBottom: '30px',}}>
+              <h3>
+                Projects
+              </h3>
+            </div>
           <div className="serviceLowerContainer">
             <div className="ProjectSlideIcon phoneHide" onClick={handlePrev}>
               <span>

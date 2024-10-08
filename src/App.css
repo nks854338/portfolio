@@ -3,7 +3,7 @@
   padding: 0%;
   box-sizing: border-box;
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   border: none;
 }
 
@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-a {
+h3 a {
   text-decoration: none;
 }
 
@@ -27,8 +27,6 @@ hr {
   border: solid 0.2px #118ab2;
   margin-top: 90px;
   margin-bottom: 50px;
-  /* margin-bottom: 150px;
-    margin-top: 150px; */
 }
 
 input,
@@ -50,6 +48,32 @@ button {
 
 .laptopHide {
   display: none;
+}
+
+.mainSectionHeading h3 span,
+.mainSectionHeading h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.mainSectionHeading h3 span {
+  color: #118ab2;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+@media (min-width: 150px) and (max-width: 600px) {
+  hr {
+    display: none;
+  }
+
+  .mainSectionHeading h3 span,
+  .mainSectionHeading h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
 }
 
 /* Header & Navigation section */
@@ -107,7 +131,8 @@ header label {
   border-radius: 50%;
 }
 
-.closeIcon, .menuIcon {
+.closeIcon,
+.menuIcon {
   display: none;
 }
 
@@ -122,9 +147,13 @@ header label {
     margin: 20px 0px 0 10px;
   }
 
+  .LogoBox img {
+    height: 42px;
+  }
+
   .navbar {
     background-color: #000813;
-    width: 70%;
+    min-width: 100vw;
     padding-top: 300px;
     color: #fff;
     display: none;
@@ -134,23 +163,24 @@ header label {
     display: block;
     transform: translateY(0);
   }
-  
+
   .hideNavbar {
     display: none;
     transform: translateY(-100%);
   }
 
-  .menuIcon{
+  .menuIcon {
     width: 10%;
-    font-size: 30px;
+    font-size: 25px;
   }
 
-  .closeIcon, .menuIcon{
+  .closeIcon,
+  .menuIcon {
     display: block;
   }
 
   .closeIcon i {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   header .navbar ul {
@@ -161,13 +191,13 @@ header label {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     margin: auto;
     align-items: center;
   }
 
   li a {
-    font-size: 35px;
+    font-size: 20px !important;
     text-decoration: none;
     color: #fff;
   }
@@ -204,10 +234,6 @@ header label {
   flex-direction: column;
   gap: 25px;
   width: 40vw;
-}
-
-.HeroHeading {
-  font-size: 40px;
 }
 
 .proffession {
@@ -269,9 +295,10 @@ img {
     gap: 20px;
   }
 
-  .aboutSection{
-    flex-direction: column-reverse;
-    gap: 20px;
+  .HeroSection {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    gap: 100px;
   }
 
   .HeroLeft {
@@ -279,8 +306,14 @@ img {
     padding: 0 30px;
   }
 
+  .HeroHeading {
+    font-size: 38px;
+  }
+
   .HeroLeftContentContainer {
     width: 100%;
+    padding-top: 25px;
+    gap: 35px;
   }
 
   .HeroRight {
@@ -291,9 +324,25 @@ img {
     width: 60vw;
     height: auto;
   }
+}
 
-  .AboutInfoImg i {
-    font-size: 35px;
+@media (min-width: 150px) and (max-width: 400px) {
+  .HeroLeft {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .HeroSectionImage {
+    width: 100vw;
+    height: auto;
+  }
+
+  .HeroSectionImage img {
+    width: 90vw;
+  }
+
+  .HeroParagraph {
+    font-size: 16px;
   }
 }
 
@@ -301,9 +350,6 @@ img {
 
 /* About section css start */
 
-.aboutSection {
-  /* padding-top: 10px; */
-}
 
 .aboutInfoContainer {
   display: flex;
@@ -360,17 +406,72 @@ img {
   width: fit-content;
 }
 
-/* About section css end */
+@media (min-width: 150px) and (max-width: 700px) {
+  .AboutInfoImg i {
+    font-size: 50px;
+  }
+
+  .aboutInfoContainer {
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+  }
+
+  .aboutInfoBox {
+    min-width: 80vw;
+    min-height: 60px;
+    /* background-color: aquamarine; */
+  }
+
+  .aboutSection {
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+  }
+
+  .aboutInfoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutInfoBoxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    /* min-height: 200px; */
+  }
+
+  .aboutInfoBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .aboutInfoRightBox h3 {
+    font-size: 25px;
+    color: #118ab2;
+  }
+
+  .aboutLeftContentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px; */
+    gap: 25px;
+  }
+
+  .SkillSection{
+    display: none;
+  }
+}
 
 /* skill section css start */
 
 .SkillSection {
   padding-top: 100px;
-  /* padding-top: 20vmin; */
   padding-bottom: 20px;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .skillcardContainer {
@@ -379,20 +480,6 @@ img {
   gap: 20px;
 }
 
-.skillsMainHeading h3 {
-  font-size: 45px;
-}
-
-.skillsMainHeading h3 span {
-  font-size: 40px;
-  color: #118ab2;
-}
-
-.skillsMainHeading {
-  margin-bottom: 50px;
-}
-
-.skillsMainHeading,
 .skillHeading {
   text-align: center;
 }
@@ -450,15 +537,6 @@ img {
   padding-bottom: 100px;
 }
 
-.ServiceMainHeading h3 {
-  font-size: 45px;
-}
-
-.ServiceMainHeading h3 span {
-  font-size: 40px;
-  color: #118ab2;
-}
-
 .serviceUpperContainer div {
   text-align: left;
 }
@@ -513,15 +591,21 @@ img {
 
 @media (min-width: 150px) and (max-width: 700px) {
   .ServicesSection {
-    padding: 30px;
+    padding: 10px;
   }
-  .servicesParagraph{
+  .servicesParagraph {
     width: 100%;
     padding-bottom: 30px;
   }
 
-  .serviceCard{
+  .serviceCard {
     padding: 25px;
+    border-radius: 10px;
+  }
+
+  .serviceCardMid {
+    font-weight: 700;
+    font-size: 25px;
   }
 }
 
@@ -531,12 +615,6 @@ img {
 
 .ProjectSection {
   padding-top: 100px;
-}
-
-.ProjectMainHeading {
-  padding-bottom: 60px;
-  text-align: center;
-  font-size: 30px;
 }
 
 .serviceLowerContainer {
@@ -647,14 +725,14 @@ img {
   background-color: transparent;
 }
 
-.seeMore{
+.seeMore {
   /* height: 30px; */
-  width: 200px;
+  width: 180px;
   margin: auto;
   text-align: center;
   background-color: #118ab2;
   border-radius: 20px;
-  padding: 10px;
+  padding: 8px;
   margin-top: 50px;
 }
 
@@ -671,15 +749,36 @@ img {
   .serviceCards {
     flex-direction: column;
     margin: auto;
-    gap: 20px;
+    gap: 50px;
   }
 
   .projectCards {
-    padding: 0px 30px;
+    padding: 0px 10px;
   }
 
-  .projectCard, .serviceCard {
+  .projectCard,
+  .serviceCard {
     width: 100%;
+  }
+
+  .ProjectParagraph {
+    -webkit-line-clamp: 5;
+  }
+
+  .projectCard {
+    gap: 15px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .ProjectImage img {
+    border-radius: 12px;
+  }
+
+  .projectCardBottom button {
+    height: 40px;
+    width: 150px;
+    border-radius: 12px;
   }
 }
 
@@ -695,10 +794,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.contactMainHeading {
-  margin-bottom: -5px;
 }
 
 .ContactLeftContentContainer {
@@ -757,17 +852,23 @@ input {
   background-color: #118ab2;
 }
 
-@media (min-width: 150px) and (max-width: 700px){
-  .contactContainer{
+@media (min-width: 150px) and (max-width: 700px) {
+  .contactContainer {
     height: auto;
   }
 
-  .ContactRight, .ContactLeft{
+  .contactSection{
+    padding-bottom: 30px;
+  }
+
+  .ContactRight,
+  .ContactLeft {
     width: 100%;
     margin: auto;
   }
 
-  .HeroSectionImage, .ContactLeftContentContainer{
+  .HeroSectionImage,
+  .ContactLeftContentContainer {
     width: 100%;
     padding: 20px 20px;
     display: flex;
@@ -775,11 +876,7 @@ input {
     justify-content: center;
   }
 
-  .HeroSectionImage img{
-    width: 70vw;
-  }
-
-  .ContactForm{
+  .ContactForm {
     width: 90vw;
   }
 
@@ -788,7 +885,7 @@ input {
     gap: 10px;
     justify-content: space-between;
   }
-  
+
   .UserInfo {
     width: 100%;
   }
