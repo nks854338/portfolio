@@ -236,6 +236,10 @@ header label {
   width: 40vw;
 }
 
+.HeroHeading {
+  font-size: 40px;
+}
+
 .proffession {
   color: #118ab2;
 }
