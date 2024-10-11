@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef(); 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const serviceId = process.env.REACT_APP_SERVICE_ID;
   const templateId = process.env.REACT_APP_TEMPLATE_ID;
@@ -16,9 +19,15 @@ const Contact = () => {
       .then(
         (res) => {
           console.log(res.text);
+          // Clear the form fields after successful submission
+          setName('');
+          setEmail('');
+          setMessage('');
+          alert("Your message has been sent successfully!");
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert("Failed to send your message. Please try again later.");
         }
       );
   };
@@ -44,20 +53,34 @@ const Contact = () => {
                   <div className="UserInfo ConatctName ContactInputBox">
                     <div className="ContactName">Name</div>
                     <div className="name">
-                      <input type="text" name="from_name" />
+                      <input 
+                        type="text" 
+                        name="from_name" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)} 
+                      />
                     </div>
                   </div>
                   <div className="UserInfo ConatctMail ContactInputBox">
                     <div className="ContactName">Email</div>
                     <div className="name">
-                      <input type="email" name="from_email" />
+                      <input 
+                        type="email" 
+                        name="from_email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="message ContactInputBox">
                   <div className="ContactName">Message</div>
                   <div className="name">
-                    <textarea name="message"></textarea>
+                    <textarea 
+                      name="message" 
+                      value={message} 
+                      onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
                   </div>
                 </div>
                 <div className="ContactSubmit">
