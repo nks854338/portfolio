@@ -50,10 +50,13 @@ button {
   display: none;
 }
 
+.mainSectionHeading{
+  padding-bottom: 20px;
+}
+
 .mainSectionHeading h3 span,
 .mainSectionHeading h3 {
   font-size: 40px;
-  padding-bottom: 20px;
 }
 
 .mainSectionHeading h3 span {
@@ -237,7 +240,7 @@ header label {
 }
 
 .HeroHeading {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .proffession {

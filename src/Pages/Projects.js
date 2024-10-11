@@ -66,15 +66,6 @@ const Project = [
   },
   {
     projectId: 8,
-    Title: "image Gallery",
-    description:
-      "This full-stack application allows users to upload image files via a React frontend, store metadata in a MongoDB database, and display uploaded images.",
-    img: "images/4.png",
-    repo: "https://github.com/nks854338/FileUploadUsingMulter",
-    view: "https://multer-frontend.vercel.app/",
-  },
-  {
-    projectId: 9,
     Title: "News Fetch Web App",
     description:
       "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
@@ -83,7 +74,7 @@ const Project = [
     view: "",
   },
   {
-    projectId: 10,
+    projectId: 9,
     Title: "NutriEase (UI/UX Design)",
     description:
       " Created a user-friendly app combining nutrition tracking, meal planning, and subscription features for a restaurant. Focused on seamless user experience and functionality to enhance meal plan management.",
@@ -92,22 +83,31 @@ const Project = [
     view: "",
   },
   {
-    projectId: 11,
-    Title: "Flower Bucket",
+    projectId: 10,
+    Title: "Netflix clone",
     description:
-      "Created a floral-themed to-do list app using React.js with features for adding, viewing, and checking out tasks. Utilized useState, props, and reusable components for dynamic functionality. Tech stack: React.js.",
-    img: "images/8.png",
-    repo: "",
-    view: "",
+      "Built a responsive Netflix clone with a modern UI, mimicking Netflix's homepage design. Features interactive elements, hover effects, and a dynamic layout for seamless user experience across devices.",
+    img: "images/6.png",
+    repo: "https://github.com/nks854338/Netflix-Clone",
+    view: "https://sunny-pika-2832c2.netlify.app/",
   },
   {
-    projectId: 12,
+    projectId: 11,
     Title: "NFT-UI",
     description:
       "The NFT-UI Project, developed for the Upskill Mafia Weekly Group Project, features a sleek, user-friendly interface for NFT interactions, with light and dark mode options and responsive design for an optimal experience on desktop and mobile devices.",
     img: "images/6.png",
     repo: "https://github.com/nks854338/NFT_Project",
     view: "https://friendly-seahorse-582b31.netlify.app/",
+  },
+  {
+    projectId: 12,
+    Title: "image Gallery",
+    description:
+      "This full-stack application allows users to upload image files via a React frontend, store metadata in a MongoDB database, and display uploaded images.",
+    img: "images/4.png",
+    repo: "https://github.com/nks854338/FileUploadUsingMulter",
+    view: "https://multer-frontend.vercel.app/",
   },
 ];
 
@@ -141,11 +141,15 @@ const Projects = () => {
     <>
       <section className="ProjectSection" id="projects">
         <div className="">
-          <div className="mainSectionHeading textCenter" style={{marginBottom: '30px',}}>
-              <h3>
-                Projects
-              </h3>
-            </div>
+          <div
+            className="mainSectionHeading textCenter"
+            style={{ marginBottom: "30px" }}
+          >
+            <h3>Projects</h3>
+            <p style={{ textAlign: "center", fontSize: "18px" }}>
+              College and Side Projects for practice.
+            </p>
+          </div>
           <div className="serviceLowerContainer">
             <div className="ProjectSlideIcon phoneHide" onClick={handlePrev}>
               <span>
@@ -177,7 +181,9 @@ const Projects = () => {
                           <button className="projectLeftBtn ">View</button>
                         </a>
                         <a href={Data.repo}>
-                          <button className="projectRightBtn">Github Repo</button>
+                          <button className="projectRightBtn">
+                            Github Repo
+                          </button>
                         </a>
                       </div>
                     </div>

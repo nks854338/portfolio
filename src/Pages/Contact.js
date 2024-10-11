@@ -1,56 +1,74 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef(); 
+
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
+  const sendEmail = (e) => {
+    e.preventDefault(); 
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, publicKey)
+      .then(
+        (res) => {
+          console.log(res.text);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
+
   return (
-    <>
-      <section id="contact" className="contactSection">
-        <div className="contactMainContainer">
-          <div className="mainSectionHeading textCenter">
-              <h3>
-                Contact <span>Me</span>
-              </h3>
+    <section id="contact" className="contactSection">
+      <div className="contactMainContainer">
+        <div className="mainSectionHeading textCenter">
+          <h3>
+            Contact <span>Me</span>
+          </h3>
+        </div>
+        <div className="contactContainer">
+          <div className="ContactRight">
+            <div className="HeroSectionImage">
+              <img src="images/coder1.png" alt="Coder" />
             </div>
-          <div className="contactContainer">
-            <div className="ContactRight">
-              <div>
-                <div className="HeroSectionImage">
-                  <img src="images/coder1.png" />
-                </div>
-              </div>
-            </div>
-            <div className="ContactLeft">
-              <div className="ContactLeftContentContainer">
-                <form className="ContactForm">
-                  <div className="NameMailBox">
-                    <div className="UserInfo ConatctName ContactInputBox">
-                      <div className="ContactName">Name</div>
-                      <div className="name">
-                        <input type="text" />
-                      </div>
-                    </div>
-                    <div className="UserInfo ConatctMail ContactInputBox">
-                      <div className="ContactName">Email</div>
-                      <div className="name">
-                        <input type="text" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="message ContactInputBox">
-                    <div className="ContactName">Message</div>
+          </div>
+          <div className="ContactLeft">
+            <div className="ContactLeftContentContainer">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="NameMailBox">
+                  <div className="UserInfo ConatctName ContactInputBox">
+                    <div className="ContactName">Name</div>
                     <div className="name">
-                      <textarea name="" id=""></textarea>
+                      <input type="text" name="from_name" />
                     </div>
                   </div>
-                  <div className="ContactSubmit">
-                    <button>Send Message</button>
+                  <div className="UserInfo ConatctMail ContactInputBox">
+                    <div className="ContactName">Email</div>
+                    <div className="name">
+                      <input type="email" name="from_email" />
+                    </div>
                   </div>
-                </form>
-              </div>
+                </div>
+                <div className="message ContactInputBox">
+                  <div className="ContactName">Message</div>
+                  <div className="name">
+                    <textarea name="message"></textarea>
+                  </div>
+                </div>
+                <div className="ContactSubmit">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

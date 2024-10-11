@@ -57,6 +57,10 @@ const Tool = [
     img: "images//SkillLogo/git.png",
   },
   {
+    Title: "Postman",
+    img: "images//SkillLogo/postman.jpg",
+  },
+  {
     Title: "Wordpress",
     img: "images//SkillLogo/wordpress.jpg",
   },
@@ -102,6 +106,7 @@ const Skills = () => {
               <h3>
                 My <span>Skills</span>
               </h3>
+              <p>Data Structures and Algorithms, Frontend Development, Backend Development, Database Management</p>
             </div>
           <div className="skillcardContainer">
             <div className="skillsContainer">
