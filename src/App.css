@@ -663,7 +663,7 @@ img {
 }
 
 .projectCard {
-  height: 480px;
+  height: 420px;
   width: 380px;
   display: flex;
   flex-direction: column;
