@@ -6,7 +6,7 @@ const Project = [
     Title: "E-commerce",
     description:
       "Developed a personalized e-commerce platform, 'Senh Sangrah,' with browsing, shopping, cart, and wishlist functionalities. Enabled user authentication and shop creation for sellers.",
-    img: "images/13.png",
+    img: "images/ecommerce.jpg",
     repo: "https://github.com/nks854338/e-commerce",
     view: "https://github.com/nks854338/e-commerce",
   },
@@ -15,7 +15,7 @@ const Project = [
     Title: "Queto app",
     description:
       "Implemented a dynamic quote management system with features like search, filter, and add quotes functionality. Integrated form validation, and state management to ensure smooth user experience and efficient backend operations.",
-    img: "images/7.png",
+    img: "images/dailyQuote.jpg",
     repo: "https://github.com/nks854338/QuoteAPI",
     view: "https://quote-api-frontend-lt1d.vercel.app/",
   },
@@ -33,7 +33,7 @@ const Project = [
     Title: "Sneaker Selling Store",
     description:
       "Developed a dynamic shoe store using React Context API for state management, featuring cart management and a 'Proceed to Payment' button for future integration.",
-    img: "images/14.png",
+    img: "images/shoe.png",
     repo: "https://github.com/nks854338/task24",
     view: "https://task24-qr7h.vercel.app/",
   },
@@ -51,7 +51,7 @@ const Project = [
     Title: "ClimaCast",
     description:
       " Built a weather app providing real-time weather information with forecasts up to 1 week ahead",
-    img: "images/10.jpeg",
+    img: "images/weather.png",
     repo: "https://github.com/nks854338/Weather-app",
     view: "https://weather-app-peach-one-84.vercel.app/",
   },
@@ -69,7 +69,7 @@ const Project = [
     Title: "News Fetch Web App",
     description:
       "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
-    img: "images/50.jpg",
+    img: "images/news.png",
     repo: "",
     view: "",
   },
@@ -87,7 +87,7 @@ const Project = [
     Title: "Netflix clone",
     description:
       "Built a responsive Netflix clone with a modern UI, mimicking Netflix's homepage design. Features interactive elements, hover effects, and a dynamic layout for seamless user experience across devices.",
-    img: "images/6.png",
+    img: "images/netflix.jpg",
     repo: "https://github.com/nks854338/Netflix-Clone",
     view: "https://sunny-pika-2832c2.netlify.app/",
   },
@@ -105,7 +105,7 @@ const Project = [
     Title: "image Gallery",
     description:
       "This full-stack application allows users to upload image files via a React frontend, store metadata in a MongoDB database, and display uploaded images.",
-    img: "images/4.png",
+    img: "images/imageUpload.jpg",
     repo: "https://github.com/nks854338/FileUploadUsingMulter",
     view: "https://multer-frontend.vercel.app/",
   },
@@ -176,6 +176,13 @@ const Projects = () => {
                           {Data.description}
                         </div>
                       </div>
+                      {/* <div className="usedSkills">
+                        <div className="usedskill">HTML</div>
+                        <div className="usedskill">CSS</div>
+                        <div className="usedskill">JS</div>
+                        <div className="usedskill">PHP</div>
+                        <div className="usedskill">MySQL</div>
+                      </div> */}
                       <div className="projectCardBottom">
                         <a href={Data.view}>
                           <button className="projectLeftBtn ">View</button>

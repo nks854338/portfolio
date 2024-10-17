@@ -48,7 +48,7 @@ const Contact = () => {
           </div>
           <div className="ContactLeft">
             <div className="ContactLeftContentContainer">
-              <form ref={form} onSubmit={sendEmail}>
+              <form ref={form} onSubmit={sendEmail} className="ContactForm">
                 <div className="NameMailBox">
                   <div className="UserInfo ConatctName ContactInputBox">
                     <div className="ContactName">Name</div>

@@ -10,7 +10,7 @@ const Hero = () => {
               <div className="HeroHeading">
                 Hi, I am Nandani
                 <br />
-                <span className="proffession"> Web Developer</span>
+                <span className="proffession"> Full Stack Developer </span>
               </div>
               <div className="HeroParagraph">
               Welcome to my coding journey! 🚀 I'm excited to share my passion for tech and showcase my projects. Explore and join me on this adventure as I learn, create, and innovate in the world of technology!

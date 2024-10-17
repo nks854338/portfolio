@@ -663,7 +663,7 @@ img {
 }
 
 .projectCard {
-  height: 420px;
+  height: 480px;
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -743,6 +743,18 @@ img {
   margin-top: 50px;
 }
 
+/* .usedSkills{
+  display: flex;
+  gap: 10px;
+}
+.usedskill{
+  padding: 1px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #118ab2;
+  border: solid #ddddddca 1px;
+} 
+*/
+
 @media (min-width: 150px) and (max-width: 700px) {
   .phoneHide {
     display: none;
@@ -810,7 +822,7 @@ img {
 .ContactForm {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .NameMailBox {
