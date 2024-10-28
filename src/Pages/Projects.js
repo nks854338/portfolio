@@ -114,6 +114,15 @@ const Project = [
   },
   {
     projectId: 12,
+    Title: "Portfolio",
+    description: "A WordPress portfolio featuring projects, skills, and experience with responsive design and custom themes for a polished, interactive display.",
+    img: "images/port.jpg",
+    repo: "https://nksport.000.pe/",
+    type: "wordpress",
+    view: "https://nksport.000.pe/",
+  },
+  {
+    projectId: 13,
     Title: "News Fetch Web App",
     description:
       "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
@@ -123,7 +132,7 @@ const Project = [
     view: "",
   },
   {
-    projectId: 13,
+    projectId: 14,
     Title: "Netflix clone",
     description:
       "Built a responsive Netflix clone with a modern UI, mimicking Netflix's homepage design. Features interactive elements, hover effects, and a dynamic layout for seamless user experience across devices.",
@@ -133,7 +142,7 @@ const Project = [
     view: "https://sunny-pika-2832c2.netlify.app/",
   },
   {
-    projectId: 14,
+    projectId: 15,
     Title: "Infinity Academy",
     description:
       "A virtual university site, Infinity Academy, built with HTML, CSS, PHP, and MySQL, focusing on secure user authentication and data management.",
@@ -202,6 +211,12 @@ const Projects = () => {
             onClick={() => setFilter("php")}
           >
             PHP
+          </div>
+          <div
+            className={`sec2Btn btn3 ${filter === "wordpress" ? "active" : ""}`}
+            onClick={() => setFilter("wordpress")}
+          >
+            Wordpress
           </div>
           <div
             className={`sec2Btn btn3 ${filter === "UI/UX" ? "active" : ""}`}

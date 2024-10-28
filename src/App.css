@@ -792,6 +792,25 @@ img {
     display: none;
   }
 
+.sec2Btns {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-top: 7vmin;
+  margin-bottom: 5vmin;
+}
+
+.sec2Btn {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sec2Btn {
+  padding: 5px 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
   .laptopHide {
     display: block;
   }
@@ -824,6 +843,10 @@ img {
 
   .ProjectImage img {
     border-radius: 12px;
+  }
+
+  .projectCardBottom{
+    gap: 20px;
   }
 
   .projectCardBottom button {
