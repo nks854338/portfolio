@@ -413,6 +413,11 @@ img {
   width: fit-content;
 }
 
+.HeroParagraph{
+  margin-right: 150px;
+  padding-bottom: 25px;
+}
+
 @media (min-width: 150px) and (max-width: 700px) {
   .AboutInfoImg i {
     font-size: 50px;
@@ -420,7 +425,6 @@ img {
 
   .aboutInfoContainer {
     flex-direction: column;
-    /* background-color: antiquewhite; */
   }
 
   .aboutInfoBox {
@@ -467,6 +471,10 @@ img {
     flex-direction: column;
     /* padding: 30px; */
     gap: 25px;
+  }
+
+  .HeroParagraph{
+    margin-right: 0px;
   }
 
   .SkillSection{
@@ -598,7 +606,7 @@ img {
 
 @media (min-width: 150px) and (max-width: 700px) {
   .ServicesSection {
-    padding: 10px;
+    padding: 20px;
   }
   .servicesParagraph {
     width: 100%;
@@ -622,6 +630,30 @@ img {
 
 .ProjectSection {
   padding-top: 100px;
+}
+
+.sec2Btns {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 7vmin;
+  margin-bottom: 5vmin;
+}
+
+.sec2Btn {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sec2Btn {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.sec2Btn.active {
+  color: #118ab2;
+  border-bottom: solid 1px #118ab2;
 }
 
 .serviceLowerContainer {
@@ -663,7 +695,7 @@ img {
 }
 
 .projectCard {
-  height: 480px;
+  height: 420px;
   width: 380px;
   display: flex;
   flex-direction: column;
