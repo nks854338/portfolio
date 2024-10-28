@@ -413,9 +413,17 @@ img {
   width: fit-content;
 }
 
+.HeroParagraph{
+  margin-right: 150px;
+}
+
 @media (min-width: 150px) and (max-width: 700px) {
   .AboutInfoImg i {
     font-size: 50px;
+  }
+
+   .HeroParagraph{
+    margin-right: 0px;
   }
 
   .aboutInfoContainer {
