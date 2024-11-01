@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
+  const professions = ["Full Stack Developer", "Frontend Developer", "WordPress Developer"];
+  const [currentProfessionIndex, setCurrentProfessionIndex] = useState(0);
+
+  useEffect(() => {
+    const changeProfession = () => {
+      setCurrentProfessionIndex((prevIndex) => (prevIndex + 1) % professions.length);
+    };
+
+    const intervalId = setInterval(changeProfession, 5000); // 5 seconds delay to display each word fully
+
+    return () => clearInterval(intervalId); // Clean up on component unmount
+  }, [professions.length]);
+
   return (
     <>
       <section id="home">
@@ -10,10 +23,12 @@ const Hero = () => {
               <div className="HeroHeading">
                 Hi, I am Nandani
                 <br />
-                <span className="proffession"> Full Stack Developer </span>
+                <div className="container">
+                  <span className="proffession">{professions[currentProfessionIndex]}</span>
+                </div>
               </div>
               <div className="HeroParagraph">
-              Welcome to my coding journey! 🚀 I'm excited to share my passion for tech and showcase my projects. Explore and join me on this adventure as I learn, create, and innovate in the world of technology!
+                Welcome to my coding journey! 🚀 I'm excited to share my passion for tech and showcase my projects. Explore and join me on this adventure as I learn, create, and innovate in the world of technology!
               </div>
               <div className="socialmediaIcons">
                 <div className="socialMediaIcon">
@@ -23,7 +38,7 @@ const Hero = () => {
                 </div>
                 <div className="socialMediaIcon">
                   <a href="https://www.linkedin.com/in/nandanisingh85/">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </div>
                 <div className="socialMediaIcon">
@@ -44,8 +59,8 @@ const Hero = () => {
 
           <div className="HeroRight">
             <div>
-              <div class="HeroSectionImage">
-                <img src="images\coder3.png" />
+              <div className="HeroSectionImage">
+                <img src="images/coder3.png" alt="Coder illustration" />
               </div>
             </div>
           </div>

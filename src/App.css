@@ -243,9 +243,36 @@ header label {
   font-size: 45px;
 }
 
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 .proffession {
   color: #118ab2;
+  max-width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #212121;
+  animation: cursor 1s step-start infinite, text 5s steps(30) infinite;
 }
+
+@keyframes cursor {
+  0%, 100% {
+    border-color: #118ab2;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 22ch; 
+  }
+}
+
 
 .HeroParagraph {
   font-size: 18px;
