@@ -255,7 +255,7 @@ header label {
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid #212121;
-  animation: cursor 1s step-start infinite, text 5s steps(30) infinite;
+  animation: cursor 2s step-start infinite, text 5s steps(30) infinite;
 }
 
 @keyframes cursor {

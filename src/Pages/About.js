@@ -16,7 +16,7 @@ const About = () => {
             <div className="aboutLeftContentContainer">
               <div className="mainSectionHeading">
                 <h3>
-                  About <span>Us</span>
+                  About <span>Me</span>
                 </h3>
               </div>
               <div className="HeroParagraph">
