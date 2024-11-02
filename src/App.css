@@ -13,6 +13,7 @@ html {
 
 body {
   background-color: #000813;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -40,6 +41,10 @@ textarea {
 
 button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .phoneHide {
@@ -120,7 +125,6 @@ header .navbar ul li a {
   border-radius: 0;
   border-bottom: solid #118ab2 1px;
   color: #118ab2;
-  padding: 5px;
 }
 
 header label {
@@ -504,71 +508,12 @@ img {
     margin-right: 0px;
   }
 
-  .SkillSection{
-    display: none;
-  }
 }
 
 /* skill section css start */
 
-.SkillSection {
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
 
-.skillcardContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.skillHeading {
-  text-align: center;
-}
-
-.skillHeading {
-  font-size: 25px;
-}
-
-.skillsBoxes {
-  display: flex;
-  align-items: center;
-  gap: 5vmin;
-  justify-content: center;
-  margin: 30px;
-  overflow: scroll;
-}
-
-.skillsBoxes::-webkit-scrollbar {
-  display: none;
-}
-
-.skillsBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.skillName {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.skillImage {
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-}
-
-.skillImage:hover {
-  transform: scale(1.05);
-}
-
-.skillImage img {
-  border-radius: 50%;
-}
 /* skill section css end */
 
 /* service section css start */
@@ -687,7 +632,7 @@ img {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .ProjectSlideIconBox {

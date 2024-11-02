@@ -1,155 +1,106 @@
-import React, { useState } from "react";
-
-const Language = [
-  {
-    Title: "HTML",
-    img: "images/SkillLogo/html.png",
-  },
-  {
-    Title: "CSS",
-    img: "images/SkillLogo/CSS.png",
-  },
-  {
-    Title: "JavaScript",
-    img: "images/SkillLogo/JavaScript.png",
-  },
-  {
-    Title: "PHP",
-    img: "images/SkillLogo/Php.png",
-  },
-  {
-    Title: "SQL",
-    img: "images/SkillLogo/SQL.png",
-  },
-  {
-    Title: "C",
-    img: "images/SkillLogo/c.jpeg",
-  },
-  {
-    Title: "C++",
-    img: "images/SkillLogo/c++.jpg",
-  },
-  {
-    Title: "C#",
-    img: "images/SkillLogo/csharp.png",
-  },
-];
-
-const Tool = [
-  {
-    Title: "MySQL",
-    img: "images/SkillLogo/MySQL.png",
-  },
-  {
-    Title: "Figma",
-    img: "images/SkillLogo/Figma.png",
-  },
-  {
-    Title: "VS Code",
-    img: "images/SkillLogo/VScode.jpeg",
-  },
-  {
-    Title: "GitHub",
-    img: "images/SkillLogo/Github.png",
-  },
-  {
-    Title: "Git",
-    img: "images/SkillLogo/git.png",
-  },
-  {
-    Title: "Postman",
-    img: "images/SkillLogo/postman.jpg",
-  },
-  {
-    Title: "WordPress",
-    img: "images/SkillLogo/wordpress.jpg",
-  },
-];
-
-const Framwork = [
-  {
-    Title: "React",
-    img: "images/SkillLogo/React.png",
-  },
-  {
-    Title: "Redux",
-    img: "images/SkillLogo/Redux.png",
-  },
-  {
-    Title: "Express.js",
-    img: "images/SkillLogo/Express.png",
-  },
-  {
-    Title: "Node.js",
-    img: "images/SkillLogo/node.png",
-  },
-  {
-    Title: "Tailwind",
-    img: "images/SkillLogo/tailwind.png",
-  },
-  {
-    Title: "Bootstrap",
-    img: "images/SkillLogo/bootstrap.png",
-  },
-];
+import React from "react";
 
 const Skills = () => {
-  const [MyLanguage] = useState(Language);
-  const [MyTool] = useState(Tool);
-  const [MyFramwork] = useState(Framwork);
-
   return (
     <>
-      <section className="SkillSection" id="skills">
-        <div>
-          <div className="mainSectionHeading textCenter" style={{ marginBottom: '30px' }}>
-            <h3>
-              My <span>Skills</span>
-            </h3>
-            <p>Data Structures and Algorithms, Frontend Development, Backend Development, Database Management</p>
-          </div>
-          <div className="skillcardContainer">
-            <div className="skillsContainer">
-              <div className="skillHeading">Language</div>
-              <div className="skillsBoxes">
-                {MyLanguage.map((Data, index) => (
-                  <div className="skillsBox" key={index}>
-                    <div className="skillImage">
-                      <img src={Data.img} alt={Data.Title} />
-                    </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                ))}
-              </div>
+      <section className="skill">
+        <h3 className="mainSectionHeading" style={{ textAlign: "center" }}>
+          <h3>
+            My <span>Skills</span>
+          </h3>
+        </h3>
+        <ul className="skills-list content-card">
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">React js</h5>
+              <data value={70}>70%</data>
             </div>
-            <div className="skillsContainer">
-              <div className="skillHeading">Tool</div>
-              <div className="skillsBoxes">
-                {MyTool.map((Data, index) => (
-                  <div className="skillsBox" key={index}>
-                    <div className="skillImage">
-                      <img src={Data.img} alt={Data.Title} />
-                    </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                ))}
-              </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "70%" }} />
             </div>
-            <div className="skillsContainer">
-              <div className="skillHeading">Framework & Libraries</div>
-              <div className="skillsBoxes">
-                {MyFramwork.map((Data, index) => (
-                  <div className="skillsBox" key={index}>
-                    <div className="skillImage">
-                      <img src={Data.img} alt={Data.Title} />
-                    </div>
-                    <div className="skillName">{Data.Title}</div>
-                  </div>
-                ))}
-              </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">Express js</h5>
+              <data value={75}>75%</data>
             </div>
-          </div>
-        </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "75%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">MongoDB</h5>
+              <data value={85}>85%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "85%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">Node js</h5>
+              <data value={70}>70%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "70%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">PHP</h5>
+              <data value={90}>90%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "90%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">JavaScript</h5>
+              <data value={80}>80%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "80%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">UI/UX</h5>
+              <data value={60}>60%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "60%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">C++</h5>
+              <data value={55}>55%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "55%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">C#</h5>
+              <data value={40}>40%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "40%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">SQL</h5>
+              <data value={90}>90%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "90%" }} />
+            </div>
+          </li>
+        </ul>
       </section>
     </>
   );

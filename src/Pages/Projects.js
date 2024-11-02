@@ -9,7 +9,8 @@ const Project = [
     img: "images/ecommerce.jpg",
     repo: "https://github.com/nks854338/e-commerce",
     type: "php",
-    view: "https://github.com/nks854338/e-commerce",
+    view: "https://youtu.be/gPEbCJJDfrk",
+    techStack: ["PHP", "MySQL"],
   },
   {
     projectId: 2,
@@ -20,6 +21,7 @@ const Project = [
     repo: "https://github.com/nks854338/QuoteAPI",
     type: "web",
     view: "https://quote-api-frontend-lt1d.vercel.app/",
+    techStack: ["React js", "Express js","REST API", "MongoDB"],
   },
   {
     projectId: 3,
@@ -30,6 +32,7 @@ const Project = [
     repo: "https://github.com/nks854338/LaundryService",
     type: "web",
     view: "https://nks854338.github.io/LaundryService/",
+    techStack: ["HTML", "CSS", "JavaScript", "Email js"],
   },
   {
     projectId: 4,
@@ -40,16 +43,19 @@ const Project = [
     repo: "https://github.com/nks854338/task24",
     type: "web",
     view: "https://task24-qr7h.vercel.app/",
+    techStack: ["React js"],
+
   },
   {
     projectId: 5,
     Title: "EchoTune",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quia ratione maxime, natus quidem! Find and save your favorite recipes with Find and save your favorite recipes with",
+      "Developed a music app with interactive features like playlists and playback controls.",
     img: "images/music.jpg",
     repo: "https://github.com/nks854338/Music_App",
     type: "web",
     view: "https://music-app-ashy-one.vercel.app/",
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
   {
     projectId: 6,
@@ -60,16 +66,18 @@ const Project = [
     repo: "https://github.com/nks854338/Weather-app",
     type: "web",
     view: "https://weather-app-peach-one-84.vercel.app/",
+    techStack: ["HTML", "CSS", "JavaScript", "APIs"],
   },
   {
     projectId: 7,
     Title: "Kabadi Connect",
     description:
-      "KabadiConnect is your go-to platform for eco-friendly scrap management, connecting users with trusted local rag pickers for responsible and sustainable disposal of scrap materials. Experience efficient and reliable service for all your scrap management needs.",
+    "KabadiConnect is your go-to platform for eco-friendly scrap management, connecting users with trusted local rag pickers for responsible and sustainable disposal of scrap materials. Experience efficient and reliable service for all your scrap management needs.",
     img: "images/5.png",
     repo: "https://github.com/nks854338/-KabadiConnect",
     type: "php",
     view: "https://drive.google.com/file/d/1iIvNhVSHkcb7xuZPn_OoZw03Tu2z_Qc5/view",
+    techStack: ["PHP", "MySQL"],
   },
   {
     projectId: 8,
@@ -79,7 +87,8 @@ const Project = [
     img: "images/11.jpeg",
     repo: "",
     type: "UI/UX",
-    view: "",
+    view: "https://www.behance.net/gallery/201137863/NutriEase",
+    techStack: ["Figma"],
   },
   {
     projectId: 9,
@@ -90,17 +99,19 @@ const Project = [
     repo: "https://github.com/nks854338/NFT_Project",
     type: "web",
     view: "https://friendly-seahorse-582b31.netlify.app/",
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
   
   {
     projectId: 10,
     Title: "Alabay UI Design",
     description:
-      "A simple and clean React-based interface for the Central Asian Shepherd Dog community, designed to connect dog lovers and share valuable information.",
+    "A simple and clean React-based interface for the Central Asian Shepherd Dog community, designed to connect dog lovers and share valuable information.",
     img: "images/Alabay.png",
     repo: "https://github.com/nks854338/dogSite",
     type: "web",
     view: "https://dog-site-xi.vercel.app/",
+    techStack: ["React js"],
   },
   {
     projectId: 11,
@@ -111,25 +122,28 @@ const Project = [
     repo: "https://github.com/nks854338/FileUploadUsingMulter",
     type: "web",
     view: "https://multer-frontend.vercel.app/",
+    techStack: ["React js", "Express js", "Cloudinary", "MongoDB"],
   },
   {
     projectId: 12,
     Title: "Portfolio",
     description: "A WordPress portfolio featuring projects, skills, and experience with responsive design and custom themes for a polished, interactive display.",
     img: "images/port.jpg",
-    repo: "https://nksport.000.pe/",
     type: "wordpress",
+    repo: "https://nksport.000.pe/",
     view: "https://nksport.000.pe/",
+    techStack: ["Wordpress", "Plugin"],
   },
   {
     projectId: 13,
     Title: "News Fetch Web App",
     description:
-      "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
+    "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
     img: "images/news.png",
-    repo: "",
     type: "web",
+    repo: "",
     view: "",
+    techStack: ["React js", "Fetch API"],
   },
   {
     projectId: 14,
@@ -140,16 +154,18 @@ const Project = [
     repo: "https://github.com/nks854338/Netflix-Clone",
     type: "web",
     view: "https://sunny-pika-2832c2.netlify.app/",
+    techStack: ["HTML", "CSS"],
   },
   {
     projectId: 15,
     Title: "Infinity Academy",
     description:
-      "A virtual university site, Infinity Academy, built with HTML, CSS, PHP, and MySQL, focusing on secure user authentication and data management.",
+    "A virtual university site, Infinity Academy, built with HTML, CSS, PHP, and MySQL, focusing on secure user authentication and data management.",
     img: "images/acadmy.jpeg",
     repo: "https://github.com/nks854338/LoginSystem",
     type: "php",
     view: "https://multer-frontend.vercel.app/",
+    techStack: ["PHP", "MySQL"],
   },
 ];
 
@@ -157,9 +173,8 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleProjects, setVisibleProjects] = useState(3);
   const [filter, setFilter] = useState("all");
-  const [readMore, setReadMore] = useState({});
 
-  const filteredProjects = Project.filter((project) => 
+  const filteredProjects = Project.filter((project) =>
     filter === "all" ? true : project.type === filter
   );
 
@@ -175,23 +190,16 @@ const Projects = () => {
     );
   };
 
-  const toggleReadMore = (id) => {
-    setReadMore((prevReadMore) => ({
-      ...prevReadMore,
-      [id]: !prevReadMore[id],
-    }));
-  };
-
   return (
     <section className="ProjectSection ServicesSection" id="projects">
       <div className="mainSectionHeading">
-              <h3>
-                My <span>Projects</span>
-              </h3>
-            </div>
-            <div className="servicesParagraph HeroParagraph">
-            College and Side Projects for practice.
-            </div>
+        <h3>
+          My <span>Projects</span>
+        </h3>
+      </div>
+      <div className="servicesParagraph HeroParagraph">
+        College and Side Projects for practice.
+      </div>
       <div className="section2heading">
         <div className="sec2Btns">
           <div
@@ -239,7 +247,7 @@ const Projects = () => {
             <div className="projectCard" key={Data.projectId} style={{ flex: "1 1 30%" }}>
               <div className="projectCardtop">
                 <div className="ProjectImage">
-                  <img src={Data.img} height="60px" />
+                  <img src={Data.img} alt={Data.Title} height="60px" />
                 </div>
               </div>
               <div className="projectCardMid">
@@ -248,6 +256,13 @@ const Projects = () => {
                   {Data.description}
                 </div>
               </div>
+              {/* <div className="projectCardSecMid">
+                {Data.techStack.map((tech, index) => (
+                  <div key={index} className="projectTechList">
+                    {tech}
+                  </div>
+                ))}
+              </div> */}
               <div className="projectCardBottom">
                 <a href={Data.view}>
                   <button className="projectLeftBtn">View</button>
@@ -267,10 +282,10 @@ const Projects = () => {
         </div>
       </div>
       {visibleProjects < Project.length && (
-          <div className="seeMore laptopHide" onClick={() => setVisibleProjects((prev) => prev + 3)}>
-            See More
-          </div>
-        )}
+        <div className="seeMore laptopHide" onClick={() => setVisibleProjects((prev) => prev + 3)}>
+          See More
+        </div>
+      )}
     </section>
   );
 };
