@@ -13,19 +13,19 @@ const Skills = () => {
           <li className="skills-item">
             <div className="title-wrapper">
               <h5 className="h5">React js</h5>
-              <data value={70}>70%</data>
+              <data value={75}>75%</data>
             </div>
             <div className="skill-progress-bg">
-              <div className="skill-progress-fill" style={{ width: "70%" }} />
+              <div className="skill-progress-fill" style={{ width: "75%" }} />
             </div>
           </li>
           <li className="skills-item">
             <div className="title-wrapper">
               <h5 className="h5">Express js</h5>
-              <data value={75}>75%</data>
+              <data value={80}>80%</data>
             </div>
             <div className="skill-progress-bg">
-              <div className="skill-progress-fill" style={{ width: "75%" }} />
+              <div className="skill-progress-fill" style={{ width: "80%" }} />
             </div>
           </li>
           <li className="skills-item">
@@ -98,6 +98,15 @@ const Skills = () => {
             </div>
             <div className="skill-progress-bg">
               <div className="skill-progress-fill" style={{ width: "90%" }} />
+            </div>
+          </li>
+          <li className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">Wordpress</h5>
+              <data value={80}>80%</data>
+            </div>
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{ width: "80%" }} />
             </div>
           </li>
         </ul>
