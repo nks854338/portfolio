@@ -46,6 +46,11 @@ const Hero = () => {
                     <i className="fa-brands fa-behance"></i>
                   </a>
                 </div>
+                <div className="socialMediaIcon">
+                  <a href="www.youtube.com/@Nandani-e2b">
+                  <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
               </div>
               <div className="HeroBtn">
                 <a href="https://drive.google.com/file/d/1sKE5mhL4ICFhan1ijpsEbrhjwsOYlO29/view?usp=sharing" target="blank">
