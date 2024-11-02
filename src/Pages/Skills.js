@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
   return (
     <>
-      <section className="skill">
+      <section className="skill" id="skills">
         <h3 className="mainSectionHeading" style={{ textAlign: "center" }}>
           <h3>
             My <span>Skills</span>

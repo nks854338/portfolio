@@ -113,7 +113,8 @@
 
   .article-title { margin-bottom: 30px; }
   
-  .timeline { 
+  .timeline {
+    padding-top: 50px; 
     max-width: 80%;
     margin: auto;
   }
@@ -239,6 +240,7 @@
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr; 
+        row-gap: 20px;
         column-gap: 7vmin;
     }
 
@@ -252,7 +254,6 @@
       .icon-box i{
         font-size: 30px;
         margin-bottom: 15px;
-        color: #118ab2;
       }
       
   }

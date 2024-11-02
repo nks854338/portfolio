@@ -80,6 +80,15 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="#Education"
+              className={activeSection === "Education" ? "active" : ""}
+              onClick={toggleNavbar} 
+            >
+              Education
+            </a>
+          </li>
+          <li>
+            <a
               href="#services"
               className={activeSection === "services" ? "active" : ""}
               onClick={toggleNavbar} 
