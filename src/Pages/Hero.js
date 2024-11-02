@@ -47,7 +47,7 @@ const Hero = () => {
                   </a>
                 </div>
                 <div className="socialMediaIcon">
-                  <a href="www.youtube.com/@Nandani-e2b" target="_blank">
+                  <a href="https://www.youtube.com/@Nandani-e2b" target="_blank">
                   <i class="fa-brands fa-youtube"></i>
                   </a>
                 </div>
