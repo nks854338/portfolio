@@ -9,7 +9,7 @@ const Project = [
     img: "images/ecommerce.jpg",
     repo: "https://github.com/nks854338/e-commerce",
     type: "php",
-    view: "https://youtu.be/gPEbCJJDfrk",
+    view: "https://youtu.be/3jh1oqnANUI",
     techStack: ["PHP", "MySQL"],
   },
   {
