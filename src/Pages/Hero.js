@@ -32,22 +32,22 @@ const Hero = () => {
               </div>
               <div className="socialmediaIcons">
                 <div className="socialMediaIcon">
-                  <a href="https://github.com/nks854338">
+                  <a href="https://github.com/nks854338" target="_blank">
                     <i className="fa-brands fa-github"></i>
                   </a>
                 </div>
                 <div className="socialMediaIcon">
-                  <a href="https://www.linkedin.com/in/nandanisingh85/">
+                  <a href="https://www.linkedin.com/in/nandanisingh85/" target="_blank">
                     <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </div>
                 <div className="socialMediaIcon">
-                  <a href="https://www.behance.net/nandanikumari13">
+                  <a href="https://www.behance.net/nandanikumari13" target="_blank">
                     <i className="fa-brands fa-behance"></i>
                   </a>
                 </div>
                 <div className="socialMediaIcon">
-                  <a href="www.youtube.com/@Nandani-e2b">
+                  <a href="www.youtube.com/@Nandani-e2b" target="_blank">
                   <i class="fa-brands fa-youtube"></i>
                   </a>
                 </div>
