@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Hero = () => {
-  const professions = ["Full Stack Developer", "WordPress Developer", "UI/UX Designer"];
+  const professions = ["MERN Stack Developer", "WordPress Developer", "UI/UX Designer"];
   const [currentProfessionIndex, setCurrentProfessionIndex] = useState(0);
 
   useEffect(() => {
