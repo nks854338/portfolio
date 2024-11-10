@@ -9,7 +9,7 @@ const Project = [
     img: "images/Dreamify.png",
     repo: "https://github.com/nks854338/Dreamify",
     type: "web",
-    view: "https://dreamify-git-main-nandanis-projects-6ea5e9ab.vercel.app/",
+    view: "https://dreamify-sigma.vercel.app/",
     techStack: ["React js", "Express js", "MongoDB"],
   },
   {
@@ -109,7 +109,7 @@ const Project = [
     img: "images/Dreamify.png",
     repo: "",
     type: "UI/UX",
-    view: "https://www.behance.net/gallery/201137863/NutriEase",
+    view: "https://www.behance.net/gallery/211666459/Dreamify-AI-Image-Generator-UI-Design",
     techStack: ["Figma"],
   },
   {
@@ -166,6 +166,17 @@ const Project = [
     repo: "",
     view: "",
     techStack: ["React js", "Fetch API"],
+  },
+  {
+    projectId: 16,
+    Title: "Portfolio UI",
+    description:
+      "Portfolio UI showcasing creative designs, transforming ideas into visually captivating digital experiences.",
+    img: "images/port.jpg",
+    repo: "",
+    type: "UI/UX",
+    view: "https://www.behance.net/gallery/211666459/Dreamify-AI-Image-Generator-UI-Design",
+    techStack: ["Figma"],
   },
 ];
 
