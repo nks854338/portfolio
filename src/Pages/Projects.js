@@ -148,16 +148,6 @@ const Project = [
   },
   {
     projectId: 14,
-    Title: "Portfolio",
-    description: "A WordPress portfolio featuring projects, skills, and experience with responsive design and custom themes for a polished, interactive display.",
-    img: "images/port.jpg",
-    type: "wordpress",
-    repo: "https://nksport.000.pe/",
-    view: "https://nksport.000.pe/",
-    techStack: ["Wordpress", "Plugin"],
-  },
-  {
-    projectId: 15,
     Title: "News Fetch Web App",
     description:
     "Developed a news web app using a custom useFetch hook to retrieve news from an API. Features include search filtering, news removal, and a 'Read More' option for viewing full articles.",
@@ -168,7 +158,7 @@ const Project = [
     techStack: ["React js", "Fetch API"],
   },
   {
-    projectId: 16,
+    projectId: 15,
     Title: "Portfolio UI",
     description:
       "Portfolio UI showcasing creative designs, transforming ideas into visually captivating digital experiences.",
@@ -232,12 +222,6 @@ const Projects = () => {
             PHP
           </div>
           <div
-            className={`sec2Btn btn3 ${filter === "wordpress" ? "active" : ""}`}
-            onClick={() => setFilter("wordpress")}
-          >
-            Wordpress
-          </div>
-          <div
             className={`sec2Btn btn3 ${filter === "UI/UX" ? "active" : ""}`}
             onClick={() => setFilter("UI/UX")}
           >
@@ -293,8 +277,8 @@ const Projects = () => {
         </div>
       </div>
       {visibleProjects < Project.length && (
-        <div className="seeMore laptopHide" onClick={() => setVisibleProjects((prev) => prev + 3)}>
-          See More
+        <div className="seeMore laptopHide" style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"8px"}} onClick={() => setVisibleProjects((prev) => prev + 3)}>
+          See More <img src="images/send.png" alt="" style={{height:"20px", width:"auto"}} />
         </div>
       )}
     </section>
