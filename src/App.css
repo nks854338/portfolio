@@ -604,6 +604,11 @@ img {
   padding-top: 100px;
 }
 
+.projectContainer{
+  max-width: 95vw;
+  margin: auto;
+}
+
 .sec2Btns {
   display: flex;
   gap: 5px;
@@ -784,7 +789,10 @@ img {
 }
 
   .laptopHide {
-    display: block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
   }
 
   .projectCards,

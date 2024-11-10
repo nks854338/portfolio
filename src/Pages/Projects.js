@@ -230,7 +230,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="serviceLowerContainer">
+      <div className="serviceLowerContainer projectContainer">
         <div className="ProjectSlideIcon phoneHide" onClick={handlePrev}>
           <span>
             <i className="fa-solid fa-chevron-left"></i>
@@ -277,7 +277,7 @@ const Projects = () => {
         </div>
       </div>
       {visibleProjects < Project.length && (
-        <div className="seeMore laptopHide" style={{display:"flex", alignItems:"center", justifyContent:"center", gap:"8px"}} onClick={() => setVisibleProjects((prev) => prev + 3)}>
+        <div className="seeMore laptopHide" onClick={() => setVisibleProjects((prev) => prev + 3)}>
           See More <img src="images/send.png" alt="" style={{height:"20px", width:"auto"}} />
         </div>
       )}
