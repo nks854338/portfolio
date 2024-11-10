@@ -175,7 +175,7 @@ const Project = [
     img: "images/port.jpg",
     repo: "",
     type: "UI/UX",
-    view: "https://www.behance.net/gallery/211666459/Dreamify-AI-Image-Generator-UI-Design",
+    view: "https://www.behance.net/gallery/212142291/Portfolio-UI-design",
     techStack: ["Figma"],
   },
 ];
