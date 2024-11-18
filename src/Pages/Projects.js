@@ -7,7 +7,7 @@ const Project = [
     description:
       "Dreamify is an image generation platform where users can create stunning visuals by providing prompts. Explore, post your own creations, and discover a vibrant community sharing inspiring images.",
     img: "images/Dreamify.png",
-    repo: "https://github.com/nks854338/Dreamify",
+    repo: "https://github.com/technandani/Dreamify",
     type: "web",
     view: "https://dreamify-sigma.vercel.app/",
     techStack: ["React js", "Express js", "MongoDB"],
@@ -18,7 +18,7 @@ const Project = [
     description:
       "Developed a personalized e-commerce platform, 'Senh Sangrah,' with browsing, shopping, cart, and wishlist functionalities. Enabled user authentication and shop creation for sellers.",
     img: "images/SenhSangrah.png",
-    repo: "https://github.com/nks854338/e-commerce",
+    repo: "https://github.com/technandani/e-commerce",
     type: "php",
     view: "https://youtu.be/3jh1oqnANUI",
     techStack: ["PHP", "MySQL"],
@@ -29,7 +29,7 @@ const Project = [
     description:
       "Implemented a dynamic quote management system with features like search, filter, and add quotes functionality. Integrated form validation, and state management to ensure smooth user experience and efficient backend operations.",
     img: "images/dailyQuote.jpg",
-    repo: "https://github.com/nks854338/QuoteAPI",
+    repo: "https://github.com/technandani/QuoteAPI",
     type: "web",
     view: "https://quote-api-frontend-lt1d.vercel.app/",
     techStack: ["React js", "Express js","REST API", "MongoDB"],
@@ -40,9 +40,9 @@ const Project = [
     description:
       "A laundry service web app where customers can select and book services. Integrated Email.js to notify the owner of bookings, ensuring efficient communication and service management.",
     img: "images/12.png",
-    repo: "https://github.com/nks854338/LaundryService",
+    repo: "https://github.com/technandani/LaundryService",
     type: "web",
-    view: "https://nks854338.github.io/LaundryService/",
+    view: "https://technandani.github.io/LaundryService/",
     techStack: ["HTML", "CSS", "JavaScript", "Email js"],
   },
   {
@@ -51,7 +51,7 @@ const Project = [
     description:
       "Developed a dynamic shoe store using React Context API for state management, featuring cart management and a 'Proceed to Payment' button for future integration.",
     img: "images/shoe.png",
-    repo: "https://github.com/nks854338/task24",
+    repo: "https://github.com/technandani/task24",
     type: "web",
     view: "https://task24-qr7h.vercel.app/",
     techStack: ["React js"],
@@ -63,7 +63,7 @@ const Project = [
     description:
       "Developed a music app with interactive features like playlists and playback controls.",
     img: "images/music.jpg",
-    repo: "https://github.com/nks854338/Music_App",
+    repo: "https://github.com/technandani/Music_App",
     type: "web",
     view: "https://music-app-ashy-one.vercel.app/",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -74,7 +74,7 @@ const Project = [
     description:
       " Built a weather app providing real-time weather information with forecasts up to 1 week ahead",
     img: "images/weather.png",
-    repo: "https://github.com/nks854338/Weather-app",
+    repo: "https://github.com/technandani/Weather-app",
     type: "web",
     view: "https://weather-app-peach-one-84.vercel.app/",
     techStack: ["HTML", "CSS", "JavaScript", "APIs"],
@@ -85,7 +85,7 @@ const Project = [
     description:
     "KabadiConnect is your go-to platform for eco-friendly scrap management, connecting users with trusted local rag pickers for responsible and sustainable disposal of scrap materials. Experience efficient and reliable service for all your scrap management needs.",
     img: "images/5.png",
-    repo: "https://github.com/nks854338/-KabadiConnect",
+    repo: "https://github.com/technandani/-KabadiConnect",
     type: "php",
     view: "https://drive.google.com/file/d/1iIvNhVSHkcb7xuZPn_OoZw03Tu2z_Qc5/view",
     techStack: ["PHP", "MySQL"],
@@ -118,7 +118,7 @@ const Project = [
     description:
       "The NFT-UI Project, developed for the Upskill Mafia Weekly Group Project, features a sleek, user-friendly interface for NFT interactions, with light and dark mode options and responsive design for an optimal experience on desktop and mobile devices.",
     img: "images/6.png",
-    repo: "https://github.com/nks854338/NFT_Project",
+    repo: "https://github.com/technandani/NFT_Project",
     type: "web",
     view: "https://friendly-seahorse-582b31.netlify.app/",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -130,7 +130,7 @@ const Project = [
     description:
     "A simple and clean React-based interface for the Central Asian Shepherd Dog community, designed to connect dog lovers and share valuable information.",
     img: "images/Alabay.png",
-    repo: "https://github.com/nks854338/dogSite",
+    repo: "https://github.com/technandani/dogSite",
     type: "web",
     view: "https://dog-site-xi.vercel.app/",
     techStack: ["React js"],
@@ -141,7 +141,7 @@ const Project = [
     description:
       "This full-stack application allows users to upload image files via a React frontend, store metadata in a MongoDB database, and display uploaded images.",
     img: "images/imageUpload.jpg",
-    repo: "https://github.com/nks854338/FileUploadUsingMulter",
+    repo: "https://github.com/technandani/FileUploadUsingMulter",
     type: "web",
     view: "https://multer-frontend.vercel.app/",
     techStack: ["React js", "Express js", "Cloudinary", "MongoDB"],
