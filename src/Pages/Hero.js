@@ -53,7 +53,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="HeroBtn">
-                <a href="https://drive.google.com/file/d/1towUfaCc2N874LG2NNqqEn4lzrW4bm-L/view?usp=sharing" target="blank">
+                <a href="https://drive.google.com/file/d/165vZwEHuU72YgZYs02eVf-YFHJpgXIlr/view?usp=drive_link" target="blank">
                   <button className="btn">
                     Resume <i className="fa-solid fa-download"></i>
                   </button>
